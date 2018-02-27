@@ -38,32 +38,32 @@
 
 				<!-- About Name -->				
                 <?php if(is_user_logged_in() && get_theme_mod('cn12_portfolio_timeline-about-name') == "") : ?>
-                    <p class="font-italic text-warning">
+                    <p class="font-italic text-warning about-name">
                         * Your [about name] is set to a generic name, enter customize mode to set your name.
 					</p>
 				<?php elseif(get_theme_mod('cn12_portfolio_timeline-about-name') == "") : ?>
-					<h3>Your Name</h3>
+					<h3 class="about-name">Your Name</h3>
 				<?php else : ?>
-					<?= '<h3>' . get_theme_mod('cn12_portfolio_timeline-about-name') . '</h3>' ?>
+					<?= '<h3 class="about-name">' . get_theme_mod('cn12_portfolio_timeline-about-name') . '</h3>' ?>
 				<?php endif; ?>
 
 				<!-- About Tagline -->
 				<?php 
 					if ( get_bloginfo( 'description' ) ) {
-						echo '<span>' . get_bloginfo( 'description' ) . '</span>'; 
+						echo '<span class="about-tagline">' . get_bloginfo( 'description' ) . '</span>'; 
 					} elseif(is_user_logged_in()) {
-						echo '<span class="font-italic text-warning">* Your [about tagline] isn\'t set, enter customize mode to set your description.</span>';
+						echo '<span class="font-italic text-warning about-tagline">* Your [about tagline] isn\'t set, enter customize mode to set your description.</span>';
 					}
 				?>
 
 				<!-- About Description -->
 				<?php if(get_theme_mod('cn12_portfolio_timeline-about-description') != ""): ?>
 					<h5 class="about-text">About</h5>
-                    <p><?php echo get_theme_mod('cn12_portfolio_timeline-about-description'); ?></p>
+                    <p class="about-description"><?php echo get_theme_mod('cn12_portfolio_timeline-about-description'); ?></p>
                 <?php elseif(is_user_logged_in()) : ?>
 					<br/>
 					<br/>
-                    <p class="font-italic text-warning">
+                    <p class="font-italic text-warning about-description">
                         * Your [about description] isn't set, enter customize mode to set your description.
                     </p>
                 <?php endif; ?>

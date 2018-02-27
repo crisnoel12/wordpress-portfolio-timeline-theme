@@ -16,7 +16,19 @@
 	} );
 	wp.customize( 'blogdescription', function( value ) {
 		value.bind( function( to ) {
-			$( '.site-description' ).text( to );
+			$( '.about-tagline' ).text( to );
+		} );
+	} );
+
+	// Sidebar About section
+	wp.customize('cn12_portfolio_timeline-about-name', function (value) {
+		value.bind( function( to ) {
+			$( '.about-name' ).text( to );
+		} );
+	} );
+	wp.customize('cn12_portfolio_timeline-about-description', function (value) {
+		value.bind( function( to ) {
+			$( '.about-description' ).text( to );
 		} );
 	} );
 

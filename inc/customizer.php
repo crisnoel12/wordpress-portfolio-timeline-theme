@@ -57,7 +57,8 @@ function cn12_portfolio_timeline_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'cn12_portfolio_timeline-about-name',
         array(
-            'default' => 'Your Name'
+            'default' => 'Your Name',
+            'transport' => 'postMessage'
         )
     );
     $wp_customize->add_control(
@@ -75,7 +76,10 @@ function cn12_portfolio_timeline_customize_register( $wp_customize ) {
 
     // About Description
     $wp_customize->add_setting(
-        'cn12_portfolio_timeline-about-description'
+        'cn12_portfolio_timeline-about-description',
+        array(
+            'transport' => 'postMessage'
+        )
     );
     $wp_customize->add_control(
         new WP_Customize_Control(
@@ -90,6 +94,9 @@ function cn12_portfolio_timeline_customize_register( $wp_customize ) {
             )
         )
     );
+
+    $wp_customize->remove_section( 'background_image');
+    $wp_customize->remove_section( 'colors');
 }
 add_action( 'customize_register', 'cn12_portfolio_timeline_customize_register' );
 

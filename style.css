@@ -1,0 +1,239 @@
+/*!
+Theme Name: cn12_portfolio_timeline
+Author: Cris Noel
+Author URI: https://crisnoel.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cn12_portfolio_timeline
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+cn12_portfolio_timeline is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Montserrat', sans-serif; }
+
+button.navbar-toggler {
+  border: 0; }
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 139, 139, 0.6); }
+
+.main-btn,
+form.search-form .search-submit {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: darkcyan;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  .main-btn:hover,
+  form.search-form .search-submit:hover {
+    cursor: pointer;
+    background-color: #00a5a5; }
+
+.navbar {
+  background-color: darkcyan; }
+  .navbar .navbar-brand {
+    color: white;
+    letter-spacing: .05em;
+    font-size: 1em; }
+    .navbar .navbar-brand img {
+      margin-right: 8px; }
+  .navbar .navbar-nav li.menu-item {
+    margin: 0 7px; }
+  .navbar .navbar-nav .page_item a,
+  .navbar .navbar-nav .menu-item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e3e3e3 !important;
+    font-size: .7em;
+    letter-spacing: 0.2em;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    transition: color .2s ease-in; }
+    .navbar .navbar-nav .page_item a:hover,
+    .navbar .navbar-nav .menu-item a:hover {
+      color: #00bebe !important; }
+
+.site-logo {
+  width: 35px;
+  height: 20px;
+  margin-right: 5px; }
+
+#main-container {
+  padding: 0; }
+
+#sidebar-about,
+.sidebar-filler {
+  background-color: #262b2f; }
+
+.sidebar-filler {
+  margin-top: -1px; }
+
+#sidebar-about {
+  color: white;
+  padding: 20px; }
+  #sidebar-about .usr-img {
+    width: 100px;
+    max-height: 100px;
+    border: 4px solid darkcyan;
+    margin-bottom: 10px; }
+  #sidebar-about .about-text {
+    margin-top: 10px; }
+  #sidebar-about hr {
+    border-color: darkcyan; }
+  @media screen and (min-width: 768px) {
+    #sidebar-about {
+      padding-top: 80px; } }
+
+#main-content-container {
+  margin: 0;
+  position: relative;
+  padding-bottom: 99.200px; }
+
+#main-content {
+  padding-left: 15px; }
+
+#page-title {
+  padding: 12px 12px 5px 0;
+  margin-bottom: 0;
+  border-bottom: 9px solid;
+  margin-bottom: 0; }
+
+.title-singular-page {
+  margin-bottom: 10px !important; }
+
+.post {
+  padding-top: 32px;
+  min-height: 150px;
+  position: relative; }
+
+.post::before {
+  background: darkcyan;
+  border: 8px solid #262b2f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  content: "";
+  position: relative;
+  z-index: 1;
+  left: -16px; }
+
+.vertical-line {
+  width: 8px;
+  background-color: #262b2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.post-date {
+  margin-top: -45px;
+  margin-left: 3rem; }
+
+.post-panel {
+  margin: 1rem 0 0 3rem;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px lightgrey;
+  background-color: whitesmoke; }
+
+#sidebar-widgets {
+  margin-top: 65px; }
+
+#sidebar-widgets-top-border {
+  border-bottom: 9px solid darkcyan;
+  margin-bottom: 10px;
+  display: block; }
+
+.widget-title {
+  font-size: 1.5em; }
+
+.search-form {
+  position: relative;
+  margin-bottom: 20px; }
+  .search-form .screen-reader-text {
+    display: none; }
+  .search-form label {
+    width: 100%; }
+  .search-form .search-field {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  .search-form .search-submit {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+footer#page-footer {
+  text-transform: capitalize;
+  color: darkcyan;
+  background-color: whitesmoke;
+  padding: 40px 20px;
+  font-size: .7em;
+  letter-spacing: .3em;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.attachment-post-thumbnail {
+  width: 100%;
+  max-height: 350px;
+  margin-bottom: 20px; }
+
+.entry-footer {
+  background: darkcyan;
+  color: white;
+  padding: 10px;
+  margin-top: 20px; }
+  .entry-footer .cat-links a {
+    color: #DCA21D; }
+
+#comments {
+  margin-top: 20px; }
+  #comments .says {
+    display: none; }
+  #comments li.comment {
+    list-style: none; }
+
+#respond {
+  margin-top: 20px; }
+  #respond textarea#comment {
+    resize: none; }

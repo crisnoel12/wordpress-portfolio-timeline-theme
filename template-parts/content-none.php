@@ -9,7 +9,7 @@
 
 ?>
 
-	<h1 id="page-title"><?php esc_html_e( 'No Posts Exist', 'cn12_portfolio_timeline' ); ?></h1>
+	<h1 id="page-title" class="title-singular-page"><?php esc_html_e( 'No Posts Exist', 'cn12_portfolio_timeline' ); ?></h1>
 
 	<div class="page-content">
 		<?php
@@ -33,10 +33,8 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'cn12_portfolio_timeline' ); ?></p>
-			<?php
-				get_search_form();
-
-		else : ?>
+			
+		<?php else : ?>
 
 			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'cn12_portfolio_timeline' ); ?></p>
 			<?php

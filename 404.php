@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<?= get_template_part('template-parts/main-content-top'); ?>
-		<h1 id="page-title"><?php esc_html_e( '404 Page Not Found', 'cn12_portfolio_timeline' ); ?></h1>
+		<h1 id="page-title" class="title-singular-page"><?php esc_html_e( '404 Page Not Found', 'cn12_portfolio_timeline' ); ?></h1>
 			<p><?php esc_html_e( 'The page you are looking for does not exist. Maybe try a search?', 'cn12_portfolio_timeline' ); ?></p>
 
 			<?php

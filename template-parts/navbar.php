@@ -19,6 +19,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+        <hr class="d-lg-none"/>
         <?php
             if ( has_nav_menu( "navbar-menu" ) ) {
                 wp_nav_menu( array(

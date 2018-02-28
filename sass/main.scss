@@ -80,6 +80,9 @@ form.search-form .search-submit {
     }
     & .navbar-nav li.menu-item {
         margin: 0 7px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 5px;
+        }
     }
     & .navbar-nav .page_item a,
       .navbar-nav .menu-item a {

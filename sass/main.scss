@@ -155,11 +155,10 @@ form.search-form .search-submit {
     padding: 12px 12px 5px 0;
     margin-bottom: 0;
     border-bottom: 9px solid;
-    margin-bottom: 0;
-    // margin-left: calc(2% - 5px);
 }
 
-.title-singular-page {
+.title-singular-page,
+.page #page-title {
     margin-bottom: 10px !important;
 }
 

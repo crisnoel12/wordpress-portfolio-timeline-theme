@@ -123,9 +123,11 @@ function cn12_portfolio_timeline_scripts() {
 
 	wp_enqueue_style( 'cn12_portfolio_timeline-style', get_stylesheet_uri() );
 
-	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', '', '', true);
+	wp_enqueue_script('jquery3', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', '', '', true);
 
-	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', '', '', true);
+	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery3'), '', true);
+
+	wp_enqueue_script('bootstrap4_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery3'), '', true);
 
 	wp_enqueue_script('main_js', get_template_directory_uri() . '/bundle.js', '', '', true);
 
